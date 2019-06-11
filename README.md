@@ -20,10 +20,10 @@ args = arguments to pass
 hidden = yes
 ```
 
-In path and args the macro %startup% resolves to the folder where the WinAppLauncher executable is located.
+%startup% gets the folder where the myUtil executable is located.
+
+%args% gets the arguments passed to myUtil.
 
 hidden hides a console window.
-
-It's possible to pass arguments to myUtil.exe, they are appended to args.
 
 Please click the star button if you ever find it useful.
