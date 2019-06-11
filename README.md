@@ -7,9 +7,10 @@ Optional: Rename WinAppLauncher.exe for instance to myUtil.exe
 Create a text file with params extensions next to WinAppLauncher.
 The text file name must match the executable name:
 
+```
 C:\myFolder\myUtil.exe
-
 C:\myFolder\myUtil.params
+```
 
 In the text file add:
 
