@@ -25,3 +25,5 @@ In path and args the macro %startup% resolves to the folder where the WinAppLaun
 hidden hides a console window.
 
 It's possible to pass arguments to myUtil.exe, they are appended to args.
+
+Click the star button if you ever find it useful.
