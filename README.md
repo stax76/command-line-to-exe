@@ -1,29 +1,29 @@
-# WinAppLauncher
 
-WinAppLauncher executes a command line.
+# command-line-to-exe
 
-Optional: Rename WinAppLauncher.exe for instance to myUtil.exe
+Allows creating an executable that executes a defined command line.
 
-Create a text file with params extensions next to WinAppLauncher.
+Rename CommandLineToExe.exe for instance to example.exe
+
+Create a text file with params extensions next to example.exe.
 The text file name must match the executable name:
 
 ```
-C:\myFolder\myUtil.exe
-C:\myFolder\myUtil.params
+C:\folder\example.exe
+C:\folder\example.params
 ```
 
-In the text file add:
+The params ini text file supports the following options:
 
 ```
-path = path to a executable or any file like for instance a script
-args = arguments to pass
-hidden = yes
+path = <exe or other files that support shell execute>
+args = <arguments to pass, see macro section below>
+hidden = yes  # hides console windows
+working-directory = <working directory>
 ```
 
-%startup% gets the folder where the myUtil executable is located.
+### Macros
 
-%args% gets the arguments passed to myUtil.
+%startup% gets the folder where the example executable is located.
 
-hidden hides a console window.
-
-Please click the star button if you ever find it useful.
+%args% or %1%, %2%, %3% etc. are the arguments passed to the example executable.

@@ -6,12 +6,13 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{4869E848-83D8-43EE-978E-01814646F0B3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WinAppLauncher</RootNamespace>
-    <AssemblyName>WinAppLauncher</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <RootNamespace>CommandLineToExe</RootNamespace>
+    <AssemblyName>CommandLineToExe</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,6 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
